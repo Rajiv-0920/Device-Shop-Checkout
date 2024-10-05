@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --white: #FFFFFF;
+    --gray: #e6e7eb;
+    --black: #1D1D1F;
+    --light-blue: #95AAD0;
+    --light-black: #6C727F;
+    --light-white: #F3F4F6;
+    --light-gray: #00000033;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-image: url("../images/background-image.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 100vh;
+    background-color: var(--light-white);
+    font-family: "Inter", sans-serif;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    width: min(1350px, 90%);
+}
+
+.total-checkout {
+    margin: 25px auto;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+}
+
+.head {
+    color: var(--white);
+    font-size: 1.35rem;
+}
+
+.total-items {
+    background-color: var(--light-blue);
+    color: var(--white);
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+
+}
+
+.checkout {
+    background-color: var(--white);
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    color: var(--black);
+}
+
+.checkout>section {
+    flex: 1;
+    /* Same as flex: 1 1 0; */
+    padding: 30px;
+}
+
+@media (min-width: 850px) {
+    .checkout {
+        flex-direction: row;
+    }
+}
+
+.checkout-information {
+    background-color: var(--gray);
+    border-radius: 20px 20px 0 0px;
+}
+
+@media (min-width: 850px) {
+    .checkout-information {
+        border-radius: 20px 0 0 20px;
+    }
+}
+
+.product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.product-item {
+    display: flex;
+    gap: 20px;
+}
+
+.product-img {
+    background-color: var(--white);
+    width: 130px;
+    height: 120px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--light-gray);
+}
+
+@media (max-width: 600px) {
+    .product-img {
+        width: 100px;
+        height: 80px;
+    }
+}
+
+.product-img img {
+    object-fit: contain;
+}
+
+.product-information {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 10px;
+}
+
+.product-information>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.product-information>div:last-child {
+    margin-top: auto;
+}
+
+.product-color {
+    color: var(--light-black);
+    font-weight: 600;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+hr {
+    margin: 30px 0;
+    border: 1px solid var(--light-gray);
+}
+
+.pricing {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pricing>form,
+.pricing>div {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.coupon-code {
+    padding: 15px;
+    width: 100%;
+    border: 1px solid var(--light-gray);
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-size: 1.1rem;
+}
+
+input[type="submit"] {
+    background-color: var(--black);
+    color: var(--light-white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 800;
+    font-family: "Inter", sans-serif;
+}
+
+.total {
+    color: var(--black);
+}
+
+.sub-total, .tax {
+    color: var(--light-black);
+}
+
+.contact-information {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-information>div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: 600;
+    color: var(--light-black);
+    font-size: 0.9rem;
+}
+
+div.country-information {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+}
+
+div.country-information>div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 50%;
+}
+
+.name, .code, .email, .country {
+    padding: 15px;
+    background-color: #f3f4f6;
+    border: 1px solid var(--light-gray);
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.btn-continue {
+    background-color: var(--black);
+    color: var(--light-white);
+    font-family: 'Inter';
+    font-size: 1.2rem;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: 700;
+}

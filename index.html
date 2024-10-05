@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Device Shop Checkout</title>
+</head>
+
+<body>
+  <main class="container">
+    <div class="total-checkout">
+      <strong class="head">Checkout</strong>
+      <div class="total-items">3 items</div>
+    </div>
+    <div class="checkout">
+      <section class="checkout-information">
+        <ul class="product-list">
+          <li class="product-item">
+            <div class="product-img">
+              <img src="./images/Gold@2x.png" alt="">
+            </div>
+            <div class="product-information">
+              <div>
+                <strong class="product-name">iPhone 12 Pro</strong>
+                <strong class="product-price">$999.00</strong>
+              </div>
+              <div class="product-color">Golden</div>
+              <div>
+                <div class="product-quantity">x1</div>
+                <button><img src="./images/close-icon.svg" alt=""></button>
+              </div>
+            </div>
+          </li>
+          <li class="product-item">
+            <div class="product-img">
+              <img src="./images/Blue@2x.png" alt="">
+            </div>
+            <div class="product-information">
+              <div>
+                <strong class="product-name">Apple Watch</strong>
+                <strong class="product-price">$399.00</strong>
+              </div>
+              <div class="product-color">Blue</div>
+              <div>
+                <div class="product-quantity">x1</div>
+                <button><img src="./images/close-icon.svg" alt=""></button>
+              </div>
+            </div>
+          </li>
+          <li class="product-item">
+            <div class="product-img">
+              <img src="images/iMac=Front 1@2x.png" alt="">
+            </div>
+            <div class="product-information">
+              <div>
+                <strong class="product-name">iMac</strong>
+                <strong class="product-price">$1199.00</strong>
+              </div>
+              <div class="product-color">Green</div>
+              <div>
+                <div class="product-quantity">x1</div>
+                <button><img src="./images/close-icon.svg" alt=""></button>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <hr>
+        <div class="pricing">
+          <form class="coupon">
+            <input type="text" class="coupon-code" placeholder="Enter Coupon Code">
+            <input type="submit" value="Apply Coupon">
+          </form>
+
+          <div class="sub-total">
+            <strong>Sub total</strong><strong>$2597.00</strong>
+          </div>
+          <div class="tax">
+            <strong>Tax</strong><strong>$623.28</strong>
+          </div>
+          <div class="total">
+            <strong>Total</strong><strong>$3220.28</strong>
+          </div>
+        </div>
+      </section>
+      <section class="contact-information">
+        <h3 class="contact-title">Contact Information</h3>
+        <div>
+          <label for="name">First & Last name</label>
+          <input type="text" name="name" class="name" id="" class="name" placeholder="Enter first & last name">
+        </div>
+        <div>
+          <label for="email">Email Address</label>
+          <input type="email" name="email" placeholder="Enter email address" id="email" class="email">
+        </div>
+        <div class="country-information">
+          <div>
+            <label for="country">Country</label>
+            <select name="country" id="country" class="country">
+              <option value="india">India</option>
+              <option value="finland">Finland</option>
+              <option value="sri lanka">Sri Lanka</option>
+            </select>
+          </div>
+          <div>
+            <label for="code">Postal Code</label>
+            <input type="number" placeholder="00270" name="code" id="code" class="code">
+          </div>
+        </div>
+        <button class="btn-continue">Continue</button>
+      </section>
+    </div>
+  </main>
+
+</body>
+
+</html>
