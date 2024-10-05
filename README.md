@@ -6,7 +6,9 @@ This project is a responsive checkout page for an Apple shop, designed to provid
 
 ## Screenshot
 
-![Checkout Page Screenshot](path/to/your/screenshot.png)
+![Checkout Page Screenshot](./images/image.png)
+
+[Live Url](https://rajiv-0920.github.io/Device-Shop-Checkout/)
 
 ## Features
 
